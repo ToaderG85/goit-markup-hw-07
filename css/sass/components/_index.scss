@@ -1,0 +1,225 @@
+/*HeroSection*/
+
+.hero__section{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-image.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    .hero__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .bussiness-object {
+            font-weight: 900;
+            font-size: 44px;
+            line-height: 1.4;
+            width: 696px;
+            height: 120px;
+            text-align: center;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: $standardwhite;
+        }
+        .request-service-button {
+            font-size: 16px;
+            line-height: 1.9;
+            text-align: center;
+            letter-spacing: 0.06em;
+            color: $standardwhite;
+            padding: 0;
+            width: 200px;
+            height: 50px;
+            background: $standardblue;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+            border-style: none;
+            cursor: pointer;
+            margin-top: 30px;
+        }
+    }
+}
+
+/*OurValuesSection*/
+
+.our-values__section {
+    padding-bottom: 0px;
+    .grid {
+        display: flex;
+        gap: 30px;
+        .value__list {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            .value__title {
+                font-size: 14px;
+                line-height: 16px;
+                letter-spacing: 0.03em;
+                text-transform: uppercase;
+                color: $standardtextcolor;
+                padding-bottom: 10px;
+            }
+            .value__description {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 1.7;
+                letter-spacing: 0.03em;
+                color: $standardgrey;
+            }
+        }    
+    }
+}
+
+/*WhatWeDo/OurTeam-Sections*/
+
+.what-we-do__section,
+.our-team__section,
+.regular-customer-section {
+    .section__subtitle {
+        font-size: 36px;
+        line-height: 1.2;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $standardtextcolor;
+        padding-bottom: 50px;
+    }
+    .grid {
+        display: flex;
+        gap: 30px;
+        justify-content: center
+    }
+}
+
+.our-team__section {   
+    background: #F5F4FA;
+}
+
+.employee__card{
+    height: 470px;
+    background: $standardwhite;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .employee__details {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        image-title {
+            font-size: 18px;
+            line-height: 2;
+            letter-spacing: 0.06em;
+            color: $standardtextcolor;
+        }
+        .image-description {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.9;
+            letter-spacing: 0.03em;
+            color: $standardgrey;
+        }
+    }
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    .social-media__item {
+        width: 44px;
+        height: 44px;
+        background-color: $standardwhite;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+            color: #AFB1B8;
+            transition: background-color, color $standardtransition;
+            &:hover{
+                color: $standardwhite;
+                background-color: $standardblue;
+                width: 44px;
+                height: 44px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        svg {
+            fill: currentColor;
+        }
+    }
+}
+
+.what-we-do__section {
+    .grid {
+        position: relative;
+        .box {
+            position: relative;
+            }
+        .box-title {
+            position: absolute;
+            bottom: 0;
+            width: 370px;
+            height: 70px;
+            background: rgba(47, 48, 58, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Roboto';
+            font-size: 14px;
+            line-height: 1.1;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: $standardwhite;
+        }
+        &:nth-child(1) {
+             z-index: 1;
+        }              
+        &:nth-child(2) {
+             z-index: 2;
+        }
+    }
+}
+
+    
+
+
+
+
+
+
+/*RegularCustomersSection*/
+
+.regular-grid {
+    display: flex;
+    gap: 30px;
+    .regular-grid__item {
+        border: 1px solid #AFB1B8;
+        border-radius: 4px;
+        svg {
+            fill: currentColor;
+        }
+        a {
+            color: #AFB1B8;
+            transition: color $standardtransition;
+            &:hover{
+                color: $standardblue;
+                background-color: $standardwhite;
+                width: 170px;
+                height: 95px;
+                border: 1px solid $standardblue;
+                border-radius: 4%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}

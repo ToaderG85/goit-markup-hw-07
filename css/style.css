@@ -34,7 +34,7 @@ html {
 }
 
 
-/*ModalSection*/
+/*ModalSection
 .modal {
     background: rgba(0, 0, 0, 0.2);
     position: fixed;
@@ -215,10 +215,10 @@ html {
     margin: 0px 124px;
     cursor: pointer;
 }
+*/
 
 
-
-/*Header-Footer Section*/
+/*Header-Footer Section
 
 .header__container {
     display: flex;
@@ -446,8 +446,9 @@ html {
     align-items: end;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+*/
 
-/*ProjectSection*/
+/*ProjectSection
 
 .project__category{
     display: flex;
@@ -563,6 +564,7 @@ html {
     padding-left: 24px;
     color: #757575;
 }
+*/
 
 /*HeroSection*/
 

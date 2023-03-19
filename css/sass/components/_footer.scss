@@ -2,28 +2,22 @@
     background: $backgroudcolor;
     height: 250px;
     padding: 60px 0px;
-}
-
-.footer-grid {
-    display: flex;
-    .footer-social-media__title {
-        font-size: 14px;
-        line-height: 1.1;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: $standardwhite;
-        font-style: normal;
-        padding-bottom: 20px;
-        
+    &__list {
+        display: flex;
     }
-    .footer-grid__item{
+    &__item{
         width: 301px;
         display: flex;
-        .footer-social-media__list {
-            display: flex;
-            gap: 10px;
+        .logo-style {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-size: 26px;
+            line-height: 1.2;
+            letter-spacing: 0.03em;
+            color: $standardblue;
+            text-decoration: none;
         }
-        .footer-second-logo {
+        .second-logo {
             color: $standardwhite
         }
         .adress-line {
@@ -35,7 +29,6 @@
             font-style: normal;
             padding-top: 30px;
         }
-        
         .contact-method {
             font-weight: 400;
             font-size: 14px;
@@ -48,35 +41,48 @@
             padding-bottom: 12px;
             padding-top: 12px;
         }
-        
     }
 }
-
-.footer-social-media__item {
-    width: 44px;
-    height: 44px;
-    background: rgba(255, 255, 255, 0.1);;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    a {
+    
+.footer-social-media {
+    &__title {
+        font-size: 14px;
+        line-height: 1.1;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
         color: $standardwhite;
-        transition: background-color $standardtransition;
-        &:hover{
-            color: $standardwhite;
-            background-color: $standardblue;
+        font-style: normal;
+        padding-bottom: 20px;
+    }
+    &__list{
+        display: flex;
+        gap: 10px;
+        .footer-social-media__item {
             width: 44px;
             height: 44px;
+            background: rgba(255, 255, 255, 0.1);;
             border-radius: 50%;
             display: flex;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
+            a {
+                color: $standardwhite;
+                transition: background-color $standardtransition;
+                &:hover{
+                    color: $standardwhite;
+                    background-color: $standardblue;
+                    width: 44px;
+                    height: 44px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            svg {
+                fill: currentColor;  
+            }
         }
-    }
-    svg {
-        fill: currentColor;
-        
     }
 }
 
@@ -113,7 +119,6 @@
     svg{
         fill: currentColor;
         color: $standardwhite;
-    }
-   
+    } 
 }
 
